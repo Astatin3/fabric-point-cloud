@@ -25,6 +25,7 @@ def run_loop():
     clientsocket.connect(('localhost', 65000))
     print("Connected!")
 
+
     while running:
         points, colors = k.get_ptcld(colorized=True, scale=10)
         
@@ -51,7 +52,7 @@ def run_loop():
         # reconstruction.points = o3d.utility.Vector3dVector(points)
         # reconstruction.colors = o3d.utility.Vector3dVector(colors)
         # vis.update_geometry(reconstruction)
-        
+        #
         for i in range(len(points)):
             point = points[i]
             color = colors[i]
